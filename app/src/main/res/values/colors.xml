@@ -27,6 +27,16 @@
         <item>@color/material_light_black</item>
     </integer-array>
 
+    <color name="purple">#800080</color>
+    <color name="navyBlue">#18222E</color>
+    <color name="lightNavyBlue">#192533</color>
+    <color name="darkGray">#2B3340</color>
+    <color name="transparentGray">#4D2B3340</color>
+    <color name="lightGray">#8F939E</color>
+    <color name="Blue">#055C9D</color>
+    <color name="lightBlue">#12aeef</color>
+    <color name="red">#FF0000</color>
+
     <color name="material_amber_100">#FFECB3</color>
     <color name="material_amber_200">#FFE082</color>
     <color name="material_amber_300">#FFD54F</color>
