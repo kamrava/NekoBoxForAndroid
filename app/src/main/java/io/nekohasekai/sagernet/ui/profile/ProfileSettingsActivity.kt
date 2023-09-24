@@ -274,6 +274,7 @@ abstract class ProfileSettingsActivity<T : AbstractBean>(
 
             R.id.action_apply -> {
                 runOnDefaultDispatcher {
+                    println("HAMED_LOG_1")
                     activity?.saveAndExit()
                 }
                 true

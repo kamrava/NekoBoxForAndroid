@@ -125,12 +125,14 @@ abstract class GroupUpdater {
         val progress = Collections.synchronizedMap<Long, Progress>(mutableMapOf())
 
         fun startUpdate(proxyGroup: ProxyGroup, byUser: Boolean) {
+            println("HAMED_LOG_START_UPDATE_0")
             runOnDefaultDispatcher {
                 executeUpdate(proxyGroup, byUser)
             }
         }
 
         suspend fun executeUpdate(proxyGroup: ProxyGroup, byUser: Boolean): Boolean {
+            println("HAMED_LOG_START_UPDATE_1")
             return coroutineScope {
                 if (!updating.add(proxyGroup.id)) cancel()
                 GroupManager.postReload(proxyGroup.id)

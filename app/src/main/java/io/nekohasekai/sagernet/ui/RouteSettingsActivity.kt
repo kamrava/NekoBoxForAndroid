@@ -349,6 +349,7 @@ class RouteSettingsActivity(
             }
 
             R.id.action_apply -> {
+                println("HAMED_LOG_4")
                 runOnDefaultDispatcher {
                     activity?.saveAndExit()
                 }

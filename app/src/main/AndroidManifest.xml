@@ -62,7 +62,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Start">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.TestActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TestActivity"
             android:exported="false" />
 
         <meta-data
@@ -73,7 +76,7 @@
             android:name=".ui.BlankActivity"
             android:configChanges="uiMode" />
         <activity
-            android:name=".ui.TestActivity"
+            android:name=".ui.MainActivity"
             android:configChanges="uiMode"
             android:exported="true"
             android:launchMode="singleTask">

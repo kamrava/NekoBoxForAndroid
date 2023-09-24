@@ -138,6 +138,7 @@ class ConfigEditActivity : ThemedActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_apply -> {
+                println("HAMED_LOG_2")
                 saveAndExit()
                 return true
             }

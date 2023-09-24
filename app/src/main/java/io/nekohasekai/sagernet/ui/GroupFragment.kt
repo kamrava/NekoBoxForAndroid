@@ -388,6 +388,7 @@ class GroupFragment : ToolbarFragment(R.layout.layout_group),
             groupName.text = proxyGroup.displayName()
 
             editButton.setOnClickListener {
+                println("HAMED_LOG_EDIT_1");
                 startActivity(Intent(it.context, GroupSettingsActivity::class.java).apply {
                     putExtra(GroupSettingsActivity.EXTRA_GROUP_ID, group.id)
                 })

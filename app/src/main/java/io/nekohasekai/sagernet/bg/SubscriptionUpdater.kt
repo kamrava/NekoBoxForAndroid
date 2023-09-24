@@ -85,6 +85,7 @@ object SubscriptionUpdater {
                 )
                 nm.notify(2, notification.build())
 
+                println("HAMED_LOG_START_UPDATE_5")
                 GroupUpdater.executeUpdate(profile, false)
             }
 

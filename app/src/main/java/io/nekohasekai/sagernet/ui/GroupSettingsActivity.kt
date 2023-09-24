@@ -243,6 +243,7 @@ class GroupSettingsActivity(
         if (editingId == 0L) {
             GroupManager.createGroup(ProxyGroup().apply { serialize() })
         } else if (needSave()) {
+            println("HAMED_LOG_3_1: " + DataStore.editingId.toString())
             val entity = SagerDatabase.groupDao.getById(DataStore.editingId)
             if (entity == null) {
                 finish()
